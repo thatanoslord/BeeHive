@@ -339,13 +339,13 @@ function App() {
             </div>
 
             <div className="flex space-x-6 mb-4 md:mb-0">
-              <a href="https://m.facebook.com/moussa.sabbar.549/ " className="hover:scale-110 transition-transform" style={{ color: 'var(--main-color)' }}>
+              <a href="https://m.facebook.com/moussa.sabbar.549/ " target="_blank" className="hover:scale-110 transition-transform" style={{ color: 'var(--main-color)' }}>
                 <Facebook size={24} />
               </a>
-              <a href="https://x.com/MoussaSabbar" className="hover:scale-110 transition-transform" style={{ color: 'var(--main-color)' }}>
+              <a href="https://x.com/MoussaSabbar" target="_blank" className="hover:scale-110 transition-transform" style={{ color: 'var(--main-color)' }}>
                 <Twitter size={24} />
               </a>
-              <a href="https://github.com/thatanoslord" className="hover:scale-110 transition-transform" style={{ color: 'var(--main-color)' }}>
+              <a href="https://github.com/thatanoslord" target="_blank" className="hover:scale-110 transition-transform" style={{ color: 'var(--main-color)' }}>
                 <Github size={24} />
               </a>
             </div>
