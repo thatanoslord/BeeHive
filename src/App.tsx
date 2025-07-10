@@ -70,7 +70,7 @@ function App() {
               <img src="/images/logo.png" alt="Beehive Logo" className="h-10 w-10" />
               <span className="text-2xl font-bold" style={{ color: 'var(--main-color)' }}>Beehive</span>
             </div>
-            
+
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               <button onClick={() => scrollToSection('home')} className="hover:text-orange-400 transition-colors">Home</button>
@@ -118,10 +118,10 @@ function App() {
             <span style={{ color: 'var(--main-color)' }}>Sweet Delights</span>
           </h1>
           <p className="mb-8 max-w-2xl mx-auto leading-relaxed" style={{ fontSize: 'var(--p-font)', color: 'var(--second-color)' }}>
-            Experience the finest artisanal honey, harvested with care from our sustainable beehives. 
+            Experience the finest artisanal honey, harvested with care from our sustainable beehives.
             Each jar contains the pure essence of nature's sweetest gift.
           </p>
-          <button 
+          <button
             onClick={() => scrollToSection('products')}
             className="px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg transform"
             style={{ backgroundColor: 'var(--main-color)', color: 'var(--first-color)' }}
@@ -148,13 +148,13 @@ function App() {
               Discover our carefully curated selection of artisanal honey varieties
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {products.map((product) => (
               <div key={product.id} className="group bg-gray-800/50 rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl">
                 <div className="aspect-square overflow-hidden">
-                  <img 
-                    src={product.image} 
+                  <img
+                    src={product.image}
                     alt={product.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
@@ -192,14 +192,14 @@ function App() {
               </h2>
               <div className="w-24 h-1 mb-6" style={{ backgroundColor: 'var(--main-color)' }}></div>
               <p className="mb-6 leading-relaxed" style={{ fontSize: 'var(--p-font)', color: 'var(--second-color)' }}>
-                For over three generations, our family has been dedicated to the ancient art of beekeeping. 
-                What started as a small hobby has grown into a passionate commitment to producing the finest, 
+                For over three generations, our family has been dedicated to the ancient art of beekeeping.
+                What started as a small hobby has grown into a passionate commitment to producing the finest,
                 most sustainable honey while protecting our precious bee populations.
               </p>
               <p className="mb-6 leading-relaxed" style={{ fontSize: 'var(--p-font)', color: 'var(--second-color)' }}>
-                Our bees roam freely across pristine wildflower meadows, collecting nectar from diverse 
-                botanical sources. We practice sustainable beekeeping methods that prioritize the health 
-                and wellbeing of our colonies, ensuring that every jar of honey represents the purest 
+                Our bees roam freely across pristine wildflower meadows, collecting nectar from diverse
+                botanical sources. We practice sustainable beekeeping methods that prioritize the health
+                and wellbeing of our colonies, ensuring that every jar of honey represents the purest
                 expression of nature's bounty.
               </p>
               <div className="grid grid-cols-2 gap-6 mt-8">
@@ -214,9 +214,9 @@ function App() {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src="/images/about.png" 
-                alt="Our Beekeeping Team" 
+              <img
+                src="/images/about.png"
+                alt="Our Beekeeping Team"
                 className="rounded-2xl shadow-2xl w-full"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
@@ -237,7 +237,7 @@ function App() {
               Don't just take our word for it - hear from our satisfied customers
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {reviews.map((review, index) => (
               <div key={index} className="bg-gray-800/50 p-6 rounded-2xl hover:transform hover:scale-105 transition-all duration-300">
@@ -270,7 +270,7 @@ function App() {
               Have questions about our honey or want to learn more about beekeeping?
             </p>
           </div>
-          
+
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
               <h3 className="text-2xl font-semibold mb-6" style={{ color: 'var(--text-color)' }}>
@@ -279,45 +279,45 @@ function App() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
                   <Phone className="w-6 h-6" style={{ color: 'var(--main-color)' }} />
-                  <span style={{ color: 'var(--second-color)' }}>+1 (555) 123-4567</span>
+                  <span style={{ color: 'var(--second-color)' }}> +212 0610122293 </span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <Mail className="w-6 h-6" style={{ color: 'var(--main-color)' }} />
-                  <span style={{ color: 'var(--second-color)' }}>hello@beehivehoney.com</span>
+                  <span style={{ color: 'var(--second-color)' }}>sabbarmoussa@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <MapPin className="w-6 h-6" style={{ color: 'var(--main-color)' }} />
-                  <span style={{ color: 'var(--second-color)' }}>123 Meadow Lane, Honey Valley, CA 90210</span>
+                  <span style={{ color: 'var(--second-color)' }}>400 Taddart Agadir Morocco</span>
                 </div>
               </div>
             </div>
-            
+
             <form className="space-y-6">
               <div>
                 <label className="block mb-2 font-medium" style={{ color: 'var(--text-color)' }}>Name</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-600 focus:border-orange-400 focus:outline-none transition-colors"
                   style={{ color: 'var(--text-color)' }}
                 />
               </div>
               <div>
                 <label className="block mb-2 font-medium" style={{ color: 'var(--text-color)' }}>Email</label>
-                <input 
-                  type="email" 
+                <input
+                  type="email"
                   className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-600 focus:border-orange-400 focus:outline-none transition-colors"
                   style={{ color: 'var(--text-color)' }}
                 />
               </div>
               <div>
                 <label className="block mb-2 font-medium" style={{ color: 'var(--text-color)' }}>Message</label>
-                <textarea 
+                <textarea
                   rows={5}
                   className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-600 focus:border-orange-400 focus:outline-none transition-colors resize-none"
                   style={{ color: 'var(--text-color)' }}
                 ></textarea>
               </div>
-              <button 
+              <button
                 type="submit"
                 className="w-full py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
                 style={{ backgroundColor: 'var(--main-color)', color: 'var(--first-color)' }}
@@ -337,19 +337,19 @@ function App() {
               <img src="/images/logo.png" alt="Beehive Logo" className="h-8 w-8" />
               <span className="text-xl font-bold" style={{ color: 'var(--main-color)' }}>Beehive</span>
             </div>
-            
+
             <div className="flex space-x-6 mb-4 md:mb-0">
-              <a href="#" className="hover:scale-110 transition-transform" style={{ color: 'var(--main-color)' }}>
+              <a href="https://m.facebook.com/moussa.sabbar.549/ " className="hover:scale-110 transition-transform" style={{ color: 'var(--main-color)' }}>
                 <Facebook size={24} />
               </a>
-              <a href="#" className="hover:scale-110 transition-transform" style={{ color: 'var(--main-color)' }}>
+              <a href="https://x.com/MoussaSabbar" className="hover:scale-110 transition-transform" style={{ color: 'var(--main-color)' }}>
                 <Twitter size={24} />
               </a>
-              <a href="#" className="hover:scale-110 transition-transform" style={{ color: 'var(--main-color)' }}>
+              <a href="https://github.com/thatanoslord" className="hover:scale-110 transition-transform" style={{ color: 'var(--main-color)' }}>
                 <Github size={24} />
               </a>
             </div>
-            
+
             <div style={{ color: 'var(--second-color)' }}>
               © 2024 Beehive. All rights reserved.
             </div>
